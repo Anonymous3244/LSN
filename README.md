@@ -1,6 +1,7 @@
 The repository contains the source code and additional experimental results of our LSN paper.
 
 
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_i.png width=700 height=300 />
 
 ### 1. Performance Comparison between Our LSN and LPS by Akhound-Sadegh et al. (2023)
 
