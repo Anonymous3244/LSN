@@ -6,6 +6,8 @@ We also sincerely note that our contribution is a universal, out-of-shelf soluti
 
 #### Experiments on Transformer Model
 
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_j.png width=540 height=95 />
+
 We employ a transformer model as the backbone to validate the performance of LSN across four hyperparameter setups: $\lambda_1 = 0.01$, $\lambda_2 = 1$, $\lambda_3 = 0.1$, and LSN with $\lambda_4 = 0.05$. 
 
 The parameters of the Black-Sholes equation are set as follows: $\sigma = 0.5$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points.
