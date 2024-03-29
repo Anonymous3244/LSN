@@ -39,7 +39,7 @@ The experiments show that LSN outperform PINN with real-world financial data.
 
 
 
-<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_j.png width=800 height=150 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_j.png width=540 height=95 />
 
 
 We employ a transformer model as the backbone to validate the performance of LSN across four hyperparameter setups: $\lambda_1 = 0.01$, $\lambda_2 = 1$, $\lambda_3 = 0.1$, and LSN with $\lambda_4 = 0.05$. 
