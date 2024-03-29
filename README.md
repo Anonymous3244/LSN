@@ -1,7 +1,6 @@
 The repository contains the source code and additional experimental results of our LSN paper.
 
 
-<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_i.png width=700 height=300 />
 
 ### 1. Performance Comparison between Our LSN and LPS by Akhound-Sadegh et al. (2023)
 
@@ -36,6 +35,9 @@ The relative error of PINN and LSN are shown below:
 The experiments show that LSN outperform PINN with real-world financial data.
 
 ### 4. Experiments on Transformer Model
+
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_i.png width=300 height=160 />
+
 
 We employ a transformer model as the backbone to validate the performance of LSN across four hyperparameter setups: $\lambda_1 = 0.01$, $\lambda_2 = 1$, $\lambda_3 = 0.1$, and LSN with $\lambda_4 = 0.05$. 
 
