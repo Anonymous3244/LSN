@@ -17,7 +17,8 @@ At the algorithmic level, LPS optimizes the residual of the determining equation
 
 #### Experiments with Real-World Financial Data
 
-Taking the option 'MEAT240328C00410000' from META AI company as an example, the stock prices (Adj Close**) for a period of one year from March 23, 2023, to March 22, 2024, were extracted from the Yahoo website. The volatility was 100.08%, the strike price was 410, and the risk-free rate was 4.202 for the experiment. After normalization, the relative error between the numerical solution obtained from the neural network and the true solution (BS numerical solution) is as follows:
+The experiment is on the call option with contract ‘MEAT240328C00410000’ for the Meta Platforms, Inc. (META) listed on the Nasdaq. We used the data for a period of one year from 22nd March 2023 to 21st March 2024. The volatility is 100.08%, the strike price is 410, and the risk-free rate is 4.202%. An easy access to the data for interested reader is perhaps Yahoo! Finance: https://finance.yahoo.com/quote/META/options/.
+The results are as follows:
 
 <img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/realistic%20simulation/META_AI.png width=400 height=300 />
 
