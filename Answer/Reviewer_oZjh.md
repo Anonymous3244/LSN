@@ -10,7 +10,7 @@ Algorithm weights are set as follows: $\lambda_1 = 0.01$, $\lambda_2 = 1$, $\lam
 
 
 
-<img src=https://github.com/Jxl163/LSN/blob/main/Figure/transformer/rel.png width=400 height=300 /><img src=https://github.com/Jxl163/LSN/blob/main/Figure/transformer/mse.png width=400 height=300 /><img src=https://github.com/Jxl163/LSN/blob/main/Figure/transformer/con.png width=400 height=300 /><img src=https://github.com/Jxl163/LSN/blob/main/Figure/transformer/eq.png width=400 height=300 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/rel.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/mse.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/con.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/eq.png width=400 height=300 />
 
 We employ a transformer as the backbone and validate the performance of LSN across the aforementioned four evaluation metrics. According to the experiments, it is evident that LSN outperforms the baseline across four metrics.
 
@@ -23,9 +23,9 @@ We employ a transformer as the backbone and validate the performance of LSN acro
 
 Various combinations of different Lie symmetry operators $G$ have been performed. The Lie symmetry operators used in the first two experiments are  $G_3+G_6$.
 
-<img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
 
-<img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
 
 
 This experiment validates two aspects:
