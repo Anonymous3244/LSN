@@ -2,7 +2,6 @@ The repository contains the source code and additional experimental results of o
 
 
 
-
 ### 1. Performance Comparison between Our LSN and LPS by Akhound-Sadegh et al. (2023)
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_1.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_2.png width=400 height=300 />
