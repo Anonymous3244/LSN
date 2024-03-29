@@ -7,9 +7,9 @@
 
 Various combinations of different Lie symmetry operators $G$ have been performed. The Lie symmetry operators used in the first two experiments are  $G_3+G_6$.
 
-<img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
 
-<img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Jxl163/ICML-2024-LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
+<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
 
 
 This experiment validates two aspects:
