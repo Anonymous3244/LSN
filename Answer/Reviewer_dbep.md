@@ -6,31 +6,22 @@
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_1.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_2.png width=400 height=300 />
 
-The equation parameters are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. For network training, we employ the following specifications: $Iteration = 80000$, $depth = 9$, and $width = 50$. The dataset is configured as $Data = \\{N_r = 500, N_b = 200\\}$, where $N_r$ represents the internal points and $N_b$ denotes the boundary points. Additionally, the learning rate and learning rate decay rate are set to $lr = 0.001$ and $\gamma = 0.95$, respectively.
+In the experiment, the parameters of the Black-Sholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $30,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
 
-
-At the algorithmic level, LPS optimizes the residual of the determining equation associated with Lie symmetry, while our focus is on the further consequences of Lie symmetry, particularly on the residual of the conservation equations corresponding to Lie symmetry. From the experimental (with $G_2$ operator) provided above, it can be observed that LSN outperforms LPS.
-
-
+We respectfully note that our paper is the first work to realise the Lie symmetry by maintaining the corresponding conservation laws. This is in contrast with the approach of Akhound-Sadegh et al. (2023), which proposes to minimise the residual of the determining equation—criteria for the equation's symmetry. Compared with Akhound-Sadegh et al. (2023), our approach directly preserves the conservation laws, which are fundamental principles inherent to the physical system described by the differential equation.
 
 >**Q6:**  Without loss of generality, the authors focus on the Lie symmetry operator $G_2$ in the Black-Scholes equation. What does that mean? Would it make no difference to include Lie symmetry operators other than $G_2$, or could we equip the LSN with even more complementary mechanisms that increase the neural network's awareness of symmetry?
 
-**A6:** Thanks again for this interesting question! We fully agree. Other choices also work, and a combination has better performance. In this context, our work extends the algorithm to the Vasicek model while also conducting experiments involving various operator combinations, as shown in the following experiments,
+**A6:** Thanks again for this interesting question! We fully agree. Other choices also work, and a combination has better performance. In this context, we  conducted experiments involving various operator combinations, as shown in the following experiments:
 
 #### Extension to Vasicek Model
 
-Various combinations of different Lie symmetry operators $G$ have been performed. The Lie symmetry operators used in the first two experiments are  $G_3+G_6$.
 
-<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
+
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
 
 
-This experiment validates two aspects:
-
-1. The algorithm's generalization capability. We have successfully extended LSN to the Vasicek equation, as evidenced by the first two figures, where LSN demonstrates a 4.4-fold improvement in accuracy compared to the baseline.
-
-2. The algorithm's scalability. We conduct experiments with various single Lie symmetry operators and their linear combinations. The results show that single operators alone can achieve high accuracy, while combined operators can even outperform them.
-
+The experiments demonstrate that LSN with various combinations of symmetry operators consistently outperform PINN.
 
 
