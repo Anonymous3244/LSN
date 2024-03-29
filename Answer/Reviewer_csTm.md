@@ -4,12 +4,10 @@
 
 #### Performance Comparison between Our LSN and LPS by Akhound-Sadegh et al. (2023)
 
+
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_1.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_2.png width=400 height=300 />
 
-The equation parameters are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. For network training, we employ the following specifications: $Iteration = 80000$, $depth = 9$, and $width = 50$. The dataset is configured as $Data = \\{N_r = 500, N_b = 200\\}$, where $N_r$ represents the internal points and $N_b$ denotes the boundary points. Additionally, the learning rate and learning rate decay rate are set to $lr = 0.001$ and $\gamma = 0.95$, respectively.
-
-
-At the algorithmic level, LPS optimizes the residual of the determining equation associated with Lie symmetry, while our focus is on the further consequences of Lie symmetry, particularly on the residual of the conservation equations corresponding to Lie symmetry. From the experimental (with $G_2$ operator) provided above, it can be observed that LSN outperforms LPS.
+In the experiment, the parameters of the Black-Sholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $30,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
 
 >**Q2:** Relies solely on simulation data for validation, raising questions about the model's performance in real-world financial market scenarios.
 
@@ -17,31 +15,25 @@ At the algorithmic level, LPS optimizes the residual of the determining equation
 
 #### Experiments with Real-World Financial Data
 
-The experiment is on the call option with contract ‘MEAT240328C00410000’ for the Meta Platforms, Inc. (META) listed on the Nasdaq. We used the data for a period of one year from 22nd March 2023 to 21st March 2024. The volatility is 100.08%, the strike price is 410, and the risk-free rate is 4.202%. An easy access to the data for interested reader is perhaps Yahoo! Finance: https://finance.yahoo.com/quote/META/options/.
-The results are as follows:
+The experiment is on the call option with contract ‘MEAT240328C00410000’ for the Meta Platforms, Inc. (META) listed on the Nasdaq. We used the data for a period of one year from 22nd March 2023 to 21st March 2024. The volatility is 100.08%, the strike price is 410, and the risk-free rate is 4.202%. An easy access to the data for interested reader is perhaps Yahoo! Finance: https://finance.yahoo.com/quote/META/options/.
+The relative error of PINN and LSN are shown below:
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/realistic%20simulation/META_AI.png width=400 height=300 />
 
+
 >**Q3:**I do not understand why "focusing on the Lie symmetry operator G2 in the Black-Scholes equation" is counted as"without loss of generality". My understanding is that, given the Lie symmetry operators listed Line 138 -- 148, it should be the same number of Empirical Lie symmetry risk (Eq. 8) functions, and including/excluding any will have a real influence on the trained model.
 
-**A3:** Thanks again for this interesting question! We fully agree. Other choices also work, and a combination has better performance. In this context, our work extends the algorithm to the Vasicek model while also conducting experiments involving various operator combinations, as shown in the following experiments,
-
+**A3:** Thanks again for this interesting question! We fully agree. Other choices also work, and a combination has better performance. In this context, we conducted experiments involving various operator combinations, as shown in the following experiments:
 
 #### Extension to Vasicek Model
 
-Various combinations of different Lie symmetry operators $G$ have been performed. The Lie symmetry operators used in the first two experiments are  $G_3+G_6$.
+The results of additional experiments on other operator combinations are shown below. 
 
-<img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_4.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/Figure_5.png width=400 height=300 />
+
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_6.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/Vasicek/nG_Figure_10.png width=400 height=300 />
 
-
-This experiment validates two aspects:
-
-1. The algorithm's generalization capability. We have successfully extended LSN to the Vasicek equation, as evidenced by the first two figures, where LSN demonstrates a 4.4-fold improvement in accuracy compared to the baseline.
-
-2. The algorithm's scalability. We conduct experiments with various single Lie symmetry operators and their linear combinations. The results show that single operators alone can achieve high accuracy, while combined operators can even outperform them.
-
+The experiments demonstrate that LSN with various combinations of symmetry operators consistently outperform PINN.
 
 
 
