@@ -36,6 +36,9 @@ The experiments show that LSN outperform PINN with real-world financial data.
 
 ### 4. Experiments on Transformer Model
 
+
+![Equation](https://latex.codecogs.com/svg.latex?\theta^*%20=%20\arg%20\min%20_\theta%20\lambda_1%20\hat{\mathcal{L}}_{PDE}\left(\theta,%20\mathcal{S}_i\right)^2+\lambda_2%20\hat{\mathcal{L}}_{BC}\left(\theta,%20\mathcal{S}_s\right)^2+\lambda_3%20\hat{\mathcal{L}}_{IC}\left(\theta,%20\mathcal{S}_t\right)^2+\lambda_4%20\hat{\mathcal{L}}_{Lie}\left(\theta,%20\mathcal{S}_i\right)^2.)
+
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/lambda_i.png width=350 height=160 />
 
 
