@@ -7,7 +7,7 @@
 
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_1.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_2.png width=400 height=300 />
 
-In the experiment, the parameters of the Black-Sholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $30,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
+In the experiment, the parameters of the Black-Scholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $30,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
 
 >**Q2:** Relies solely on simulation data for validation, raising questions about the model's performance in real-world financial market scenarios.
 
