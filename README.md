@@ -7,7 +7,7 @@ The repository contains the source code and additional experimental results of o
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_1.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/LSN_LPS/Figure_2.png width=400 height=300 />
 
 
-In the experiment, the parameters of the Black-Sholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $100,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
+In the experiment, the parameters of the Black-Scholes equation are set as follows: $\sigma = 0.05$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points. The neural network architecture is designed with a depth of $9$ layers and a width of $50$ neurons. The training iteration is $100,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
 
 We respectfully note that our paper is the first work to realise the Lie symmetry by maintaining the corresponding conservation laws. This is in contrast with the approach of Akhound-Sadegh et al. (2023), which proposes to minimise the residual of the determining equation—criteria for the equation's symmetry. Compared with Akhound-Sadegh et al. (2023), our approach directly preserves the conservation laws, which are fundamental principles inherent to the physical system described by the differential equation.
 
@@ -44,7 +44,7 @@ The experiments show that LSN outperform PINN with real-world financial data.
 
 We employ a transformer model as the backbone to validate the performance of LSN across four hyperparameter setups: $\lambda_1 = 0.01$, $\lambda_2 = 1$, $\lambda_3 = 0.1$, and LSN with $\lambda_4 = 0.05$. 
 
-The parameters of the Black-Sholes equation are set as follows: $\sigma = 0.5$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points.
+The parameters of the Black-Scholes equation are set as follows: $\sigma = 0.5$, $r = 0.1$, $\Omega = (0,20)$, and $T = 1$. The dataset comprises $500$ internal points and $200$ boundary points.
 The neural network architecture is designed with a depth of $4$ layers and a width of $50$ neurons.  The training iteration is $80,000$, with a learning rate of $lr = 0.001$ and a learning rate decay factor of $\gamma = 0.95$.
 
 
