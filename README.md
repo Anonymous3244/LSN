@@ -51,6 +51,6 @@ The neural network architecture is designed with a depth of $4$ layers and a wid
 <img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/rel.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/mse.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/con.png width=400 height=300 /><img src=https://github.com/Anonymous3244/LSN/blob/main/Figure/transformer/eq.png width=400 height=300 />
 
 
-According to the experiments, LSN outperforms PINN across four  setups.
+According to the experiments, LSN outperforms transformer across four  setups.
 
 We sincerely note that our contribution is a universal, out-of-shelf solution, which is not limited with PINNs.
